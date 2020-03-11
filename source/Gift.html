@@ -7,6 +7,7 @@
   function change()
   {
     document.getElementById("Open").src = "images/end_cake.png"; //이미지 바꾸는 함수
+    document.getElementById("t").innerHTML = "";
     setTimeout('go_url()',1500)   //일정 시간 뒤에 함수 호출
   }
   function go_url()
@@ -26,6 +27,9 @@
 </head>
 <body>
 <div>
+  <div style="position: relative; top: 100px; left: 0px;" id="t">
+    촛불을 후~
+  </div>
     <img id="Open" onclick="change()" src="images/cake.png" width="800" height="1000"><br> <!--이미지 클릭시 함수 호출-->
 </div>
 </body>
