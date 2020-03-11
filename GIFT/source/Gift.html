@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+  <title>케이크</title>
+  <meta charset="utf-8">
+  <script type="text/javascript"> //Javascript 형식으로 스크립트
+  function change()
+  {
+    document.getElementById("Open").src = "images/end_cake.png"; //이미지 바꾸는 함수
+    setTimeout('go_url()',1500)   //일정 시간 뒤에 함수 호출
+  }
+  function go_url()
+  {
+    location.href="Final.html"  // 페이지 이동
+  }
+  </script>
+  <style>
+    body{font:50px "BlackHanSans"}
+    div {
+      width:100%;
+      text-align: center;
+      vertical-align: middle;
+      margin:0px auto;
+    }
+  </style>
+</head>
+<body>
+<div>
+    <img id="Open" onclick="change()" src="images/cake.png" width="800" height="1000"><br> <!--이미지 클릭시 함수 호출-->
+</div>
+</body>
+</html>

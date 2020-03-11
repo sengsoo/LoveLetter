@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+  <title>무슨 편지일까요?</title>
+  <meta charset="utf-8">
+  <script type="text/javascript"> //Javascript 형식으로 스크립트
+  function change()
+  {
+    document.getElementById("Open").src = "images/Letter_Open.png"; //이미지 바꾸는 함수
+    setTimeout('go_url()',1000)   //일정 시간 뒤에 함수 호출
+  }
+  function go_url()
+  {
+    location.href="Text.html"  // 페이지 이동
+  }
+  </script>
+  <style>
+    body{font:100px "BlackHanSans"}
+    div {
+      width:100%;
+      text-align: center;       /*수평 가운데 정렬*/
+      vertical-align: middle;   /*수직 가운데 정렬*/
+      margin:0px auto;
+    }
+  </style>
+</head>
+<body>
+<div>
+  <img id="Open" onclick="change()" src="images/Letter.png" width="555" height="500"><br> <!--이미지 클릭시 함수 호출-->
+</div>
+</body>
+</html>
